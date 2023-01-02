@@ -2,7 +2,14 @@
 
 ## Brief
 
-Draft some UI to help learners implement as homework. Or could reuse the profile page code.
+Copy `index.html` and `styles.css` files from previous homework to `./src/homework` folder. 
+
+Improve the personal profile page with the use of:
+
+- CSS Property `display:flex`
+- Use of `<picture>` to achieve responsive image source
+- Use of `vw` unit for `font-size`
+- Use of `@media` to switch CSS between device (600px and below) and laptop (above 600px) view
 
 ## Submission
 

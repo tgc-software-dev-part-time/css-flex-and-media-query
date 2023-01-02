@@ -16,8 +16,6 @@ By the end of this lesson, students would be able to:
 
 ## Lesson Plan
 
-> This is a recommended lesson plan. Instructors are free to re-arrange the flow.
-
 |Duration|Agenda|Delivery Method|Remarks|
 |-|-|-|-|
 |10 mins|Walk-in & Hook|Lecture|Intrigue students' curiosity about today's topic while giving buffer time for students who are late.|

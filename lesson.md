@@ -39,14 +39,123 @@ Run live server on the `index.html` file and you should see the expected result.
 
 Responsive Web Design is almost mandatory for every consumer based businesses since consumers are mostly on the mobile these days. In this part, we will apply the following to the same profile page from part 1. 
 
-1. viewport
-1. font size
-1. responsive image
+1. viewport (already present, comment it to see difference in responsive view)
+1. font size using `vw` unit
+1. responsive image using `<picture>`
+1. avatar's `max-width:50%`
+
+Instructor to walk through the students on the implementations on part 2's [index.html](./src/lesson/part2/index.html) and [styles.css](./src/lesson/part2/styles.css)
+
+index.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 1. Comment and Uncomment and view on responsive dev tool view-->
+    <title>My Profile</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div> 
+        <h1>My Profile</h1>
+
+        <div id="picture-container">
+            <picture> <!-- 2. Add multiple image sources -->
+                <source srcset="./images/slim-edison.jpeg" media="(max-width: 600px)">
+                <source srcset="./images/crab-edison.jpeg" media="(max-width: 1500px)">
+                <img id="avatar" src="./images/crab-edison.jpeg" alt="Edison">
+            </picture>
+        </div>
+        
+        <p class="responsive-font"> <!-- 3. Use .responsive-font class in styles.css -->
+            My name is Edison. I am a Software Engineer.
+        </p>
+        <p>
+            My hobbies are:
+        <ul>
+            <li>Visiting nature parks</li>
+            <li>Swimming</li>
+        </ul>
+        </p>
+        <div class="social">
+            You can add me on <a href="https://www.linkedin.com/in/edisonzsq/">LinkedIn</a>
+        </div>
+    </div>
+</body>
+
+</html>
+```
+
+styles.css
+```css
+#avatar {
+    width:400px;
+    border-radius: 50%;
+    max-width:50%; 
+}
+
+p {
+    margin:20px 50px 20px 50px;
+}
+
+.responsive-font{
+    font-size:5vw;
+}
+
+ul {
+    margin-left:80px;
+}
+
+li {
+    padding:4px;
+}
+
+.social {
+    background-color:skyblue;
+    color:#34282C;
+    padding:10px;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+}
+```
 
 ---
 
 ## Part 3 - Use of `@media`
 
-{{Input concepts, replicable steps & Code Samples}}
+Refer to the [index.html](./src/lesson/part3/index.html) and [styles.css](./src/lesson/part3/styles.css) files for this part. The styling has been heavily modified to achieve optimal result for demonstration purpose.
+
+Changes:
+- Removed padding/margins of elements
+- Added more CSS Flex Properties
+- Added more `<div>` to act as containers
+
+Run [index.html](./src/lesson/part3/index.html) with live server, view page in dev tool's responsive view, adjust the width of screen to within and beyond 600px to see the following CSS take effect.
+
+
+```css
+#container {
+    display:flex;
+    justify-content: center;
+    align-items:baseline;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 600px){
+    #container {
+        flex-direction: column;
+    }
+}
+```
+
+- If the width of screen is 600px and below, use `flex-direction:column;`
+- Otherwise, stick to the default `flex-direction:row` declared within `#container` selector 
 
 END
