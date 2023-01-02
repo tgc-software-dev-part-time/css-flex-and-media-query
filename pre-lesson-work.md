@@ -2,10 +2,9 @@
 
 ## Brief
 
-This is not mandatory but recommended for students who wish to be better prepared for each lesson. Pre-lesson work may contain reading logs, installation guide (so that you don't have to scramble in class) for lesson use, and practical practices.
+Timebox between 10mins and 60mins to speed read through the content.
 
-## {{Enter Title}}
-
-{{Enter Content}}
+- [Illustrative Guide to CSS Flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [What and how of Responsive Web Design](https://www.w3schools.com/html/html_responsive.asp)
 
 End

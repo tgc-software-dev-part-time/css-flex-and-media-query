@@ -2,12 +2,12 @@
 
 ## Brief
 
-Refer to [this directory](./src/homework) for homework.
-
-{{Input instructions on how to complete this assignment}}
+Draft some UI to help learners implement as homework. Or could reuse the profile page code.
 
 ## Submission
 
-{{Input instructions on how to submit this assignment}}
+- You should `fork` and `clone` the lesson repository
+- Commit and push code to your repository
+- Submit your GitHub URL to LMS
 
 END
